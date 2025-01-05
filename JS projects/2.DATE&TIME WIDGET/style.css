@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    width: 35em;
+    grid-template-columns: 8fr 4fr;
+    border-radius: 0.5rem;
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clock-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 0.2rem;
+    margin-left: 0.75rem;
+    border-radius: 0.1em;
+    align-items: center;
+    display: flex;
+    font-size: 3.5rem;
+
+}
+
+.date-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.hours{
+    color: aquamarine;
+}
+
+.minutes{
+    color: coral;
+}
+
+.seconds{
+    color: rgb(218, 58, 181);
+}
+
+@keyframes neon-glow {
+    0%{
+        box-shadow: 0 0 5px white,0 0 20px white;
+    }
+    100%{
+        box-shadow:0 0 20px white, 0 0 40px white;
+    }   
+}
+
+.date-container span{
+    padding: 10px;
+    
+}

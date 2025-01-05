@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right,black,rgb(175, 240, 175));
+}
+
+.container{
+    background-color: rgb(137, 181, 159) ;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: neonGlow 1s infinite alternate;
+}
+
+@keyframes neonGlow {
+    from{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        
+
+    }
+    to{
+        box-shadow: 0px 0px 20px green,
+        0px 0px 30px rgb(84, 216, 84),
+        0px 0px 40px rgb(188, 221, 188);
+
+    }
+}
+h1{
+    color:black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 500px;
+    height: 350px;
+    margin: 10px auto;
+    display: block;
+    font-size: 24px;
+    padding: 20px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    resize: none;
+    animation: slidein 1s ease;
+}
+@keyframes slidein{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button{
+    padding: 15px 30px;
+    background-color: burlywood;
+    width: 500px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: pink;   
+}
+
+#result{
+    font-size: 20px;
+    margin-top: 20px;
+    color: azure;
+    font-weight: bold;
+}
